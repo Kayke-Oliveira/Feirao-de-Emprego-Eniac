@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fim Google Fonts -->
+    <!-- Bootstrap Items -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fim Bootstrap Items -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="menu.js" defer></script>
+    <script src="btnbacktotop" defer></script>
+    <link rel="stylesheet" href="./Frontend/style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Feirão de Empregos</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#topo-do-site">
+                    <img src="./img/logo-eniac-branco.png" alt="Logo" width="150" height="auto">
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li> <a href="#Inicio">Inicio</a> </li>
+                    <li> <a href="#Informacoes">Informações</a> </li>
+                    <li> <a href="#Localizacao">Localização</a> </li>
+                </ul>
+            </nav>
+
+            <div class="btn-abrir-menu" id="btn-abrir-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="#Inicio">Inicio</a> </li>
+                        <li> <a href="#Informacoes">Informações</a> </li>
+                        <li> <a href="#Localizacao">Localização</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Menu Mobile-->
+            <div class="overlay-menu"></div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container" id="Inicio">
+            <div class="esquerda">
+                <h1> ✨Oportunidade de Transformar Seu Futuro Profissional!✨</h1>
+            </div>
+
+            <div class="esquerda-mobile">
+                <h1> ✨ Oportunidade de Transformar Seu Futuro Profissional! ✨</h1>
+            </div>
+
+            <div class="direita">
+                <img src="./img/pessoas.png" height="auto" margin-bottom="0">
+            </div>
+        </section>
+
+        <section id="importancia">
+            <div class="importance-wrapper">
+                <h1 class="section-title">Por que participar?</h1>
+                <p class="section-importance">Descubra os principais benefícios de participar do Feirão do Emprego ENIAC
+                </p>
+                <p class="section-importance">Clique em cada um dos quadrados!</p>
+                <div class="importance-wrapper">
+                    <div class="importance-container">
+                        <div class="importance-card" onclick="toggleCard(this)">
+                            <img src="./img/importancia/conversar.png" class="importance-icon">
+                            <div class="importance-title">Networking</div>
+                            <div class="importance-text">
+                                Ao participar do evento, você irá aumentar o seu networking, algo essencial atualmente
+                                para aumentar suas chances em uma vaga. Conheça profissionais da área e crie conexões
+                                valiosas para sua carreira.
+                            </div>
+                        </div>
+
+                        <div class="importance-card" onclick="toggleCard(this)">
+                            <img src="./img/importancia/noot.png" alt="Visibilidade com Recrutadores"
+                                class="importance-icon">
+                            <div class="importance-title">Visibilidade com Recrutadores</div>
+                            <div class="importance-text">
+                                Comparecer ao evento coloca você na vitrine para recrutadores, o que pode gerar
+                                entrevistas e oportunidades diretamente. Aproveite para deixar seu currículo e fazer
+                                contatos importantes.
+                            </div>
+                        </div>
+
+                        <div class="importance-card" onclick="toggleCard(this)">
+                            <img src="./img/importancia/explorar.png" alt="Explorar Oportunidades"
+                                class="importance-icon">
+                            <div class="importance-title">Explorar Oportunidades</div>
+                            <div class="importance-text">
+                                É uma chance única para conhecer empresas, estágios e áreas que talvez você não
+                                conhecesse fora do evento. Descubra novas possibilidades para sua carreira profissional.
+                            </div>
+                        </div>
+
+                        <div class="importance-card" onclick="toggleCard(this)">
+                            <img src="./img/importancia/desenvolvimento.png" alt="Desenvolvimento Pessoal"
+                                class="importance-icon">
+                            <div class="importance-title">Desenvolvimento Pessoal</div>
+                            <div class="importance-text">
+                                A experiência de interagir, aprender e se apresentar fortalece habilidades interpessoais
+                                e a confiança em eventos profissionais. Melhore sua comunicação e postura profissional.
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-inscrever"
+                        href="links.html"
+                        target="_blank" aria-label="Quero me inscrever">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span>QUERO ME INSCREVER!</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="Informacoes">
+            <div class="info-event">
+                <h1>🎯Informações do Evento🎯</h1>
+                <p> <i class="bi bi-calendar3"> </i> Data: 26/05 e 27/05 </p>
+                <p> <i class="bi bi-pin-map-fill"> </i> Local: Rua Força Publica, 89 </p>
+                <p> <i class="bi bi-stopwatch"></i> Horario: 09h às 16h </p>
+
+            </div>
+        </section>
+
+        <section id="feirao-empregos" class="cronograma-feirao">
+            <div class="container-feirao">
+                <div class="cabecalho">
+                    <h1> ⚙️Palestras & Workshops⚙️</h1>
+                </div>
+
+                <!-- Evento 1 -->
+                <div class="evento">
+                    <div class="data">26<br>Maio</div>
+                    <div class="conteudo palestra-azul">
+                        <span class="tipo">Palestra - 10:00</span>
+                        <h2>Liderança Multigeracional: como engajar e motivar equipes diversas</h2>
+                        <p class="palestrante">Ruy Guérios<br><small>Professor e CEO Centro Universitário ENIAC</small>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="evento">
+                    <div class="data">26<br>Maio</div>
+                    <div class="conteudo palestra-roxa">
+                        <span class="tipo">Palestra - 10:30</span>
+                        <h2>Do estágio à liderança: estratégias para crescer na carreira</h2>
+                        <p class="palestrante">Quênia Reis<br><small>Psicóloga e CEO da Captar Talentos e
+                                Desenvolvimento</small></p>
+                    </div>
+                </div>
+
+                <!-- Evento 3 -->
+                <div class="evento">
+                    <div class="data">27<br>Maio</div>
+                    <div class="conteudo palestra-azul">
+                        <span class="tipo">Workshop - 10:30</span>
+                        <h2>Apresentação e Pitch pessoal</h2>
+                        <p class="palestrante">Quênia Reis<br><small>Psicóloga e CEO da Captar Talentos e
+                                Desenvolvimento</small></p>
+                    </div>
+                </div>
+
+                <!-- Evento 4 -->
+                <div class="evento">
+                    <div class="data">27<br>Maio</div>
+                    <div class="conteudo palestra-roxa">
+                        <span class="tipo">Palestra - 14:00</span>
+                        <h2>Profissional encantador: Mais que um currículo, Uma boa presença</h2>
+                        <p class="palestrante">Jaqueline Silva<br><small>Supervisora Comercial - Superfood
+                                Contábil</small></p>
+                    </div>
+                </div>
+
+                <!-- Rodapé -->
+                <footer class="feirao-footer">
+                    <img src="./img/Hub Logo.webp" alt="Logo HUB de Carreiras ENIAC">
+                    <img src="logo-academy.png" alt="Logo Eniac Academy">
+                </footer>
+            </div>
+        </section>
+
+
+        <section id="Empresas">
+            <div class="titulo" id="titulo">
+                <h1>Empresas Participantes</h1>
+            </div>
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="./img/1- wutzi.png">
+                    <img src="./img/2- solucao.png">
+                    <img src="./img/3- tbl.png">
+                    <img src="./img/4- nacional.png" class="altamira">
+                    <img src="./img/5- panco.png">
+                    <img src="./img/6- hmpc.png">
+                    <img src="./img/7- gat.png" class="reisoffice">
+                    <img src="./img/8- fanem.png">
+                    <img src="./img/9- climb.png">
+                    <img src="./img/10- barbosa.png">
+                    <img src="./img/11- aluri.png">
+                    <img src="./img/12- 4nn.png">
+                    <img src="./img/superfood.png">
+                    <img src="./img/dwt.png">
+                    <img src="./img/mta.png">
+                    <img src="./img/unival.png">
+                    <img src="./img/WestCargo.png">
+                    <img src="./img/farias.png">
+                    <img src="./img/x.png">
+
+                    <!--Repetição das imagens-->
+                    <img src="./img/1- wutzi.png">
+                    <img src="./img/2- solucao.png">
+                    <img src="./img/3- tbl.png">
+                    <img src="./img/4- nacional.png" class="altamira">
+                    <img src="./img/5- panco.png">
+                    <img src="./img/6- hmpc.png">
+                    <img src="./img/7- gat.png" class="reisoffice">
+                    <img src="./img/8- fanem.png">
+                    <img src="./img/9- climb.png">
+                    <img src="./img/10- barbosa.png">
+                    <img src="./img/11- aluri.png">
+                    <img src="./img/12- 4nn.png">
+                    <img src="./img/superfood.png">
+                    <img src="./img/dwt.png">
+                    <img src="./img/mta.png">
+                    <img src="./img/unival.png">
+                    <img src="./img/WestCargo.png">
+                    <img src="./img/farias.png">
+                    <img src="./img/x.png">
+
+                </div>
+        </section>
+
+        <section class="maps" id="Localizacao">
+            <div class="localizacao">
+                <h1>Nos Encontre Aqui:</h1>
+            </div>
+            <div class="map-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.657896793102!2d-46.53338252373374!3d-23.4728014788609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef55eb2540001%3A0xdf80bffdcd8b95f!2sEniac!5e0!3m2!1spt-BR!2sbr!4v1746017049527!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao topo">↑</button>
+    </main>
+
+    <!-- Footer HTML -->
+    <footer style="background: linear-gradient(90deg, #0A1E49 0%, #154DB0 50%, #36A1F2 100%);">
+        <!-- Container Principal do Footer -->
+        <div class="footer-container-nav">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <span style="font-weight: bold; font-size: 1.8rem;">
+                    <img style="width: 180px;"
+                        src="https://www.eniac.edu.br/hubfs/SISTEMA%20TI%20OS/Logos-Eniac-2019-1.png" alt="Logo Eniac">
+                </span>
+            </div>
+
+            <!-- Navegação -->
+            <div class="footer-nav">
+                <a class="footer-nav-link" href="#Inicio">Início</a>
+                <a class="footer-nav-link" href="#Informacoes">Informações</a>
+                <a class="footer-nav-link" href="#Localizacao">Local</a>
+            </div>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-contact">
+            <span>
+                <i class="bi bi-geo-alt-fill"></i>
+                Endereço: R. Força Pública, 89 - Centro, <br />
+            </span>
+            <span>
+                Guarulhos - SP, 07012-030
+            </span>
+            <span>
+                <i class="bi bi-telephone-fill"></i>
+                Contato: +55 11 2472-5500
+            </span>
+        </div>
+
+        <!-- Divisor -->
+        <hr class="footer-divider">
+
+        <!-- Redes Sociais -->
+        <div style="margin: auto; text-align: center; color: #ffffff; padding: 1rem;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.2rem;">
+                <a class="footer-social" href="https://www.facebook.com/eniac.oficial/?locale=pt_BR" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a class="footer-social" href="https://www.linkedin.com/school/eniacoficial/posts/?feedView=all"
+                    target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+
+            <!-- Descrição Final -->
+            <div class="footer-description">
+                <span>Designed By Gabriel e Amigos</span>
+                <span>© 2025 Centro Universitário ENIAC | Todos os Direitos Reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+
+    <script src="./Frontend/importancia-expande.js"></script>
+
+</body>
+
+</html>
