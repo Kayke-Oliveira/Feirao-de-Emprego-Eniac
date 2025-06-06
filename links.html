@@ -1,108 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Botões de Inscrição</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url(../img/5026563.jpg);
-      background-size: cover;
-      /* ALTERADO */
-      background-position: center;
-      /* ADICIONADO h1*/
-      padding: 40px;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página de Vagas – Feirão do Emprego </title>
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    .button-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px 24px;
-      background: linear-gradient(to right, #1e3c72, #2a9df4);
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 16px;
-      font-weight: bold;
-      transition: transform 0.2s, box-shadow 0.2s;
-      text-align: center;
-    }
-
-    .button-link:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .button-link i {
-      font-size: 18px;
-    }
-
-    /* Responsivo: 1 por linha em telas menores */
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="links.css" />
 </head>
 
 <body>
+  <div class="overlay"></div>
+  <div class="page-container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Página de Vagas – Feirão do Emprego</h1>
+      <p class="header__subtitle">
+        Encontre seu futuro aqui! Explore as oportunidades que esperam por você em nossa equipe dinâmica e inovadora.
+      </p>
+    </header>
 
-  <div class="grid">
-    <a href="https://bit.ly/agenciadoras-feirao" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Agenciadoras
-    </a>
-    <a href="https://bit.ly/3Sql2Zd" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Convite Cegru
-    </a>
-    <a href="https://bit.ly/3GJOnLL" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Convite da Venture
-    </a>
+    <!-- Texto introdutório em duas colunas -->
+    <div class="intro-text">
+      <p class="intro-text__item">
+        Descubra vagas em diversas áreas e saiba mais sobre o que nos torna um ótimo lugar para trabalhar.
+      </p>
+    </div>
 
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Convite Empresa Comum
-    </a>
-    <a href="https://bit.ly/3Su81Og" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Convite Organizações Sociais
-    </a>
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Vagas TI
-    </a>
+    <!-- Grid de ícones e itens -->
+    <section class="grid-cards">
+      <a href="#" class="card">
+        <div class="card__icon"> <img src="img/Botoes/chart-simple.png" width="50px"></div>
+        <span class="card__label">Vagas Comércio e Varejo</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/money-bill.png" width="50px"></div>
+        <span class="card__label">Vagas Gestão</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/microchip.png" width="50px"></div>
+        <span class="card__label">Vagas em Tecnologia</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/user.png" width="50px"></div>
+        <span class="card__label">Vagas Logística</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/sack.png" width="50px"></div>
+        <span class="card__label">Vagas Produção e Indústria</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/gear.png" width="50px"></div>
+        <span class="card__label">Vagas Saúde</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/.png" width="50px"></div>
+        <span class="card__label">Agenciadores</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="img/Botoes/money-bill.png" width="50px"></div>
+        <span class="card__label">Convite Cegru</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="/img/chart-simple.svg"></div>
+        <span class="card__label">Convite Venture</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="/img/chart-simple.svg"></div>
+        <span class="card__label">Convite Empresa Comum</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="/img/chart-simple.svg"></div>
+        <span class="card__label">Convite Organizações Sociais</span>
+      </a>
+      <a href="#" class="card">
+        <div class="card__icon"><img src="/img/chart-simple.svg"></div>
+        <span class="card__label">Auxiliar no Evento</span>
+      </a>
+    </section>
 
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Vagas Comércio e Varejo
-    </a>
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Vagas Gestão
-    </a>
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Vagas Logística
-    </a>
-
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Vagas Produção e Indústria
-    </a>
-    <a href="https://bit.ly/3Yo2cFK" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Vagas Saúde
-    </a>
-    <a href="https://bit.ly/3RVvdow" class="button-link" target="_blank">
-      <i class="fas fa-rocket"></i> Auxiliar no Evento
-    </a>
+    <!-- Rodapé / texto informativo -->
+    <footer class="footer">
+      <p class="footer__text">
+        Conecte-se conosco em nossas redes sociais e mantenha-se atualizado sobre as últimas notícias e oportunidades.
+        Para mais
+        informações, entre em contato. Política de privacidade e termos de uso aplicáveis. Copyright [Ano] – [Nome da
+        Empresa],
+        Todos os direitos reservados.
+      </p>
+    </footer>
   </div>
-
 </body>
 
 </html>
